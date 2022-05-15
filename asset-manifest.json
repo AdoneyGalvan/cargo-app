@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/cargo-app/static/css/main.40ab61c9.css",
-    "main.js": "/cargo-app/static/js/main.c1411ba6.js",
+    "main.css": "/cargo-app/static/css/main.a5d90753.css",
+    "main.js": "/cargo-app/static/js/main.c1938bd5.js",
+    "static/media/alaska-airlines-logo-tail.png": "/cargo-app/static/media/alaska-airlines-logo-tail.62ffc7bda01cb9ea4a81.png",
     "static/media/qatar-airways-logo-tail.png": "/cargo-app/static/media/qatar-airways-logo-tail.bd6ef58faab9ef05177d.png",
+    "static/media/virgin-atlantic-logo-tail.png": "/cargo-app/static/media/virgin-atlantic-logo-tail.65f2c538c36a422acf83.png",
     "static/media/qatar-airways-logo-alt.png": "/cargo-app/static/media/qatar-airways-logo-alt.70d8a0ed5c42e70e288c.png",
+    "static/media/virgin-atlantic-logo-alt.png": "/cargo-app/static/media/virgin-atlantic-logo-alt.0237eaa342b0580e07f4.png",
+    "static/media/alaska-airlines-logo-alt.png": "/cargo-app/static/media/alaska-airlines-logo-alt.679c5213492757c9332e.png",
     "index.html": "/cargo-app/index.html",
-    "main.40ab61c9.css.map": "/cargo-app/static/css/main.40ab61c9.css.map",
-    "main.c1411ba6.js.map": "/cargo-app/static/js/main.c1411ba6.js.map"
+    "main.a5d90753.css.map": "/cargo-app/static/css/main.a5d90753.css.map",
+    "main.c1938bd5.js.map": "/cargo-app/static/js/main.c1938bd5.js.map"
   },
   "entrypoints": [
-    "static/css/main.40ab61c9.css",
-    "static/js/main.c1411ba6.js"
+    "static/css/main.a5d90753.css",
+    "static/js/main.c1938bd5.js"
   ]
 }
