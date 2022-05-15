@@ -30,6 +30,7 @@
     color: var(--airline-accent-color-2);
     margin-top: 5px;
     margin-bottom: 5px;
+    padding: 0.3rem;
   }
 
   .aircraft-data button:hover {

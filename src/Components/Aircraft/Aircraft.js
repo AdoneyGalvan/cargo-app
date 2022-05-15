@@ -14,77 +14,77 @@ const Aircraft = ( { aircraft, airlineTailLogo } ) =>
     return (
         <>
         <Row className='aircraft-info'>
-            <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+            <Col xxl="1" xl="1" lg="1" md="1" sm="3" xs="3">
             
             </Col>
-            <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+            <Col xxl="1" xl="1" lg="1" md="1" sm="3" xs="3">
             <label>Code</label>
             </Col>
-            <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+            <Col className="d-none d-md-block" xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
             <label>Manufacture</label>
             </Col>
-            <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+            <Col className="d-none d-md-block" xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
             <label>Model</label>
             </Col>
-            <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+            <Col className="d-none d-md-block" xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
             <label>Aircraft Type</label>
             </Col>
-            <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+            <Col className="d-none d-md-block" xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
             <label>Engine Type</label>
             </Col>
-            <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+            <Col className="d-none d-md-block" xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
             <label>AC Cat</label>
             </Col>
-            <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+            <Col className="d-none d-md-block" xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
             <label>Build Cert</label>
             </Col>
-            <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+            <Col className="d-none d-md-block" xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
             <label>Number Engines</label>
             </Col>
-            <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+            <Col className="d-none d-md-block" xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
             <label>Number Seats</label>
             </Col>
-            <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+            <Col xxl="1" xl="1" lg="1" md="1" sm="3" xs="3">
             <label>Status</label>
             </Col>
-            <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+            <Col xxl="1" xl="1" lg="1" md="1" sm="3" xs="3">
             
             </Col>
         </Row>
         <Row className="aircraft-data-wrapper">
             {aircraft.map((data) => (
             <Row className='aircraft-data'>
-                <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+                <Col xxl="1" xl="1" lg="1" md="1" sm="3" xs="3">
                     <img src={airlineTailLogo} className="fluid"></img>
                 </Col>
-                <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+                <Col xxl="1" xl="1" lg="1" md="1" sm="3" xs="3">
                 <label>{data.CODE}</label>
                 </Col>
-                <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+                <Col className="d-none d-md-block" xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
                 <label>{data.MFR}</label>
                 </Col>
-                <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+                <Col className="d-none d-md-block"  xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
                 <label>{data.MODEL}</label>
                 </Col>
-                <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+                <Col className="d-none d-md-block"  xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
                 <label>{data['NO-ENG']}</label>
                 </Col>
-                <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+                <Col className="d-none d-md-block"  xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
                 <label>{data.SPEED}</label>
                 </Col>
-                <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+                <Col className="d-none d-md-block"  xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
                 <label>{data.SPEED}</label>
                 </Col>
-                <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+                <Col className="d-none d-md-block" xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
                 <label>{data.SPEED}</label>
                 </Col>
-                <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+                <Col className="d-none d-md-block" xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
                 <label>{data.SPEED}</label>
                 </Col>
-                <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+                <Col className="d-none d-md-block"  xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
                 <label>{data.SPEED}</label>
                 </Col>
-                <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+                <Col xxl="1" xl="1" lg="1" md="1" sm="3" xs="3">
                 {data.STATUS === "Loading" &&
                     <FontAwesomeIcon icon={faTruckPlane}/>
                 }
@@ -98,7 +98,7 @@ const Aircraft = ( { aircraft, airlineTailLogo } ) =>
                     <FontAwesomeIcon icon={faPlane}/>
                 } 
                 </Col>
-                <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
+                <Col xxl="1" xl="1" lg="1" md="1" sm="3" xs="3">
                     <Button>Cargo</Button>
                 </Col>
         </Row>))}
