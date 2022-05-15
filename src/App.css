@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.container#content-wrapper {
+  max-width: 1800px;
+}
+
+#header {
+  background-color: white;
+}
+
+#content {
+  max-height: 800px;
+  border-radius: 25px;
+  border: 0.5rem solid var(--airline-primary-color);
+  overflow: hidden;
+}
+
+#sidebar {
+  background-color: var(--airline-primary-color);
+}
+
+#main {
+  background-color: var(--airline-accent-color-4);
+
+}
+
+#footer {
+  background-color: var(--airline-accent-color-1);
+}
+
+#aircraft-section {
+  padding: 15px;
+}
+
+#toggle-section {
+  display: flex;
+  justify-content: right;
+}
+
+#toggle-section > .toggle {
+  margin: 10px;
+}

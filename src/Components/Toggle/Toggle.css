@@ -1,0 +1,44 @@
+.toggle {
+  display: flex;
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.notch {
+  height: 42px;
+  width: 50px;
+  left: 0px;
+  top: 0px;
+  border-radius: 30%;
+  position: absolute;
+  transition: all 0.3s ease;
+  background-color: var(--airline-primary-color);
+}
+.selected >.notch {
+  height: 42px;
+  width: 50px;
+  top: 0px;
+  border-radius: 30%;
+  position: absolute;
+  transform: translate(40px);
+  background-color: var(--airline-primary-color);
+}
+
+#option-1 {
+  position: absolute;
+  top: 5px;
+  left: 12px;
+  color: var(--airline-accent-color-3);
+  height: 30px;
+}
+
+#option-2 {
+  position: absolute;
+  top: 5px;
+  left: 53px;
+  color: var(--airline-accent-color-3);
+  height: 30px;
+}

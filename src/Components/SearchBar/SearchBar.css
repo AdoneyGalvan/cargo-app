@@ -1,0 +1,52 @@
+#searchBar-image{
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#searchBar-form {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+    border-radius: 25px;
+    border: 0.5rem solid var(--airline-primary-color);
+}
+
+#searchBar-form-control {
+    width: 100%;
+    font-weight: bold;
+}
+
+#searchBar-form-control::placeholder {
+    font-weight: bold;
+    color: var(--airline-primary-color);
+}
+
+#searchBar-form-control:focus {
+    border-color: var(--airline-accent-color-1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px var(--airline-accent-color-1);
+    outline: 0 none;
+}
+
+#searchBar-manifyglass {
+    position: relative;
+    margin-right: 1rem;
+    color: var(--airline-primary-color);
+}
+
+#searchBar-manifyglass:hover {
+    color: var(--airline-accent-color-1);
+}
+
+#searchBar-cross {
+    position: relative;
+    margin-left: 1rem;
+    color: var(--airline-primary-color);
+}
+
+#searchBar-cross:hover {
+    color: var(--airline-accent-color-1);
+}

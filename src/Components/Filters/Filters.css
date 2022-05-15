@@ -1,0 +1,32 @@
+
+#filters-form-group {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.filters-form-label {
+    font-weight: bold;
+    color: var(--airline-accent-color-4);
+
+}
+
+.filters-form-select {
+    font-weight: bold;
+    color: var(--airline-primary-color);
+    background-color: var(--airline-accent-color-4);
+}
+.filters-form-select:focus {
+    border-color: var(--airline-accent-color-1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px var(--airline-accent-color-1);
+    outline: 0 none;
+}
+
+.filters-form-select:active,  .filters-form-select:hover {
+    color: var(--airline-primary-color);
+    background-color: var(--airline-accent-color-4);
+}
+
+.filters-form-select::selection {
+    color: var(--airline-primary-color);
+    background-color: var(--airline-accent-color-4);
+} 
