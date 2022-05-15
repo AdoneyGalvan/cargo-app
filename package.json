@@ -1,6 +1,6 @@
 {
   "name": "cargo-app",
-  "homepage": "https://adoneygalvan.github.io/cargo-app/public/index.html",
+  "homepage": "https://adoneygalvan.github.io/cargo-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
