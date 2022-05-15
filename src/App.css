@@ -48,7 +48,6 @@
 }
 
 #content {
-  max-height: 800px;
   border-radius: 25px;
   border: 0.5rem solid var(--airline-primary-color);
   overflow: hidden;
@@ -59,12 +58,12 @@
 }
 
 #main {
-  background-color: var(--airline-accent-color-4);
+  background-color: lightgray;
 
 }
 
 #footer {
-  background-color: var(--airline-accent-color-1);
+  background-color: var(--airline-accent-color-2);
 }
 
 #aircraft-section {

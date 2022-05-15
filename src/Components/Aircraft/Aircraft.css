@@ -4,7 +4,7 @@
     align-items: center;
     margin-left: 10px;
     border-radius: 25px;
-    background-color: white;
+    background-color: var(--airline-accent-color-2);
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
@@ -27,23 +27,35 @@
     border: 0.5rem solid var(--airline-primary-color);
     background-color: var(--airline-primary-color);
     font-weight: bold;
-    color: var(--airline-accent-color-4);
+    color: var(--airline-accent-color-2);
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .aircraft-data button:hover {
-    border: 0.5rem solid var(--airline-accent-color-1);
-    background-color: var(--airline-accent-color-1);
+    border: 0.5rem solid var(--airline-accent-color-4);
+    background-color: var(--airline-accent-color-4);
   }
 
   .aircraft-data button:focus {
     background-color: var(--airline-accent-color-1);
     border-color: var(--airline-accent-color-1) !important;;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px var(--airline-accent-color-1) !important;;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px var(--airline-accent-color-1) !important;
   }
 
   .aircraft-data-wrapper {
       height: 800px;
       overflow-y: scroll;
+  }
+
+  .aircraft-data img{
+    color: var(--airline-primary-color);
+    height: 60px;
+  }
+
+  .aircraft-data svg {
+    color: var(--airline-primary-color);
+    height: 35px;
   }
 
   .aircraft-info {
@@ -57,7 +69,7 @@
     margin-bottom: 5px;
     text-align: center;
     background-color: var(--airline-primary-color);
-    color: var(--airline-accent-color-4);
+    color: var(--airline-accent-color-2);
     max-width: 1420px;
   }
 

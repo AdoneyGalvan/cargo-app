@@ -1,6 +1,6 @@
 import "./SearchBar.css";
 import { Image, Form, FormControl, Col, Badge } from 'react-bootstrap';
-import logo from './qatar_logo.png';
+import logo from './qatar-airways-logo-alt.png';
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

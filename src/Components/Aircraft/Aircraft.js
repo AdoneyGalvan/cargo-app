@@ -1,11 +1,13 @@
 import React from "react";
 import "./Aircraft.css";
 import { Image, Form } from 'react-bootstrap';
-import { faBars} from "@fortawesome/free-solid-svg-icons";
-import { faBorderAll} from "@fortawesome/free-solid-svg-icons";
+import { faPlaneDeparture} from "@fortawesome/free-solid-svg-icons";
+import { faPlaneArrival} from "@fortawesome/free-solid-svg-icons";
+import { faPlane} from "@fortawesome/free-solid-svg-icons";
+import { faTruckPlane} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Row, Col, Button} from 'react-bootstrap';
-import tail from "./qatar_tail_logo.png";
+import tail from "./qatar-airways-logo-tail.png";
 
 const Aircraft = ( { aircraft } ) =>
 {
@@ -44,7 +46,7 @@ const Aircraft = ( { aircraft } ) =>
             <label>Number Seats</label>
             </Col>
             <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
-            <label>Aircraft Class</label>
+            <label>Status</label>
             </Col>
             <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
             
@@ -84,7 +86,18 @@ const Aircraft = ( { aircraft } ) =>
                 <label>{data.SPEED}</label>
                 </Col>
                 <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
-                <label>{data.SPEED}</label>
+                {data.STATUS === "Loading" &&
+                    <FontAwesomeIcon icon={faTruckPlane}/>
+                }
+                {data.STATUS === "Arrival" &&
+                    <FontAwesomeIcon icon={faPlaneArrival}/>
+                } 
+                {data.STATUS === "Departure" &&
+                    <FontAwesomeIcon icon={faPlaneDeparture}/>
+                } 
+                {data.STATUS === "Flight" &&
+                    <FontAwesomeIcon icon={faPlane}/>
+                } 
                 </Col>
                 <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
                     <Button>Cargo</Button>
