@@ -7,9 +7,8 @@ import { faPlane} from "@fortawesome/free-solid-svg-icons";
 import { faTruckPlane} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Row, Col, Button} from 'react-bootstrap';
-import tail from "./qatar-airways-logo-tail.png";
 
-const Aircraft = ( { aircraft } ) =>
+const Aircraft = ( { aircraft, airlineTailLogo } ) =>
 {
 
     return (
@@ -28,10 +27,10 @@ const Aircraft = ( { aircraft } ) =>
             <label>Model</label>
             </Col>
             <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
-            <label>Type Aircraft</label>
+            <label>Aircraft Type</label>
             </Col>
             <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
-            <label>Type Engine</label>
+            <label>Engine Type</label>
             </Col>
             <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
             <label>AC Cat</label>
@@ -56,7 +55,7 @@ const Aircraft = ( { aircraft } ) =>
             {aircraft.map((data) => (
             <Row className='aircraft-data'>
                 <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
-                    <img src={tail} className="fluid"></img>
+                    <img src={airlineTailLogo} className="fluid"></img>
                 </Col>
                 <Col xxl="1" xl="1" lg="1" md="1" sm="1" xs="1">
                 <label>{data.CODE}</label>
