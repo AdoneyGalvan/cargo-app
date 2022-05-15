@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cargo-app/static/css/main.40ab61c9.css",
+    "main.js": "/cargo-app/static/js/main.c1411ba6.js",
+    "static/media/qatar-airways-logo-tail.png": "/cargo-app/static/media/qatar-airways-logo-tail.bd6ef58faab9ef05177d.png",
+    "static/media/qatar-airways-logo-alt.png": "/cargo-app/static/media/qatar-airways-logo-alt.70d8a0ed5c42e70e288c.png",
+    "index.html": "/cargo-app/index.html",
+    "main.40ab61c9.css.map": "/cargo-app/static/css/main.40ab61c9.css.map",
+    "main.c1411ba6.js.map": "/cargo-app/static/js/main.c1411ba6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40ab61c9.css",
+    "static/js/main.c1411ba6.js"
+  ]
+}
