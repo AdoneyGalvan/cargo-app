@@ -22,5 +22,13 @@
         "airline-accent-color-2": "#F9FAFA",
         "airline-accent-color-3": "#8CA4C3",
         "airline-accent-color-4": "#B3D47C"
+    },
+    "Boeing":
+    {
+        "airline-primary-color": "#00369F",
+        "airline-accent-color-1": "#096AB7",
+        "airline-accent-color-2": "#F9FAFA",
+        "airline-accent-color-3": "#00618a",
+        "airline-accent-color-4": "#000707"
     }
 }

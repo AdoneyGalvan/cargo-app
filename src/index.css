@@ -14,8 +14,8 @@ code {
 
 :root {
   --airline-primary-color: #00369F;
-  --airline-accent-color-1: #0d5bff;
-  --airline-accent-color-2: #1c09d9;
+  --airline-accent-color-1: #57CAEA;
+  --airline-accent-color-2: #F9FAFA;
   --airline-accent-color-3: #00618a;
   --airline-accent-color-4: #000707;
   scrollbar-color: var(--airline-primary-color) var(--airline-accent-color-1);
