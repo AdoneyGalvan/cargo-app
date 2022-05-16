@@ -65,13 +65,13 @@
     align-items: center;
     margin-left: 10px;
     border-radius: 25px;
-    border: 0.5rem solid var(--airline-primary-color);
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
-    background-color: var(--airline-primary-color);
+    background-color: var(--airline-accent-color-1);
     color: var(--airline-accent-color-2);
     max-width: 1420px;
+    padding: 5px;
   }
 
   .aircraft-info label {

@@ -15,11 +15,13 @@ const Grid = ( { aircraft, airlineTailLogo } ) =>
         <>
         <Row className="aircraft-data-wrapper">
             {aircraft.map((data) => (
-            <Col xxl="2" xl="3" lg="4" md="6" sm="12" xs="12" key={data.id}>
+            <Col xxl="3" xl="3" lg="4" md="6" sm="12" xs="12" key={data.id}>
                 <Card className="aircraft-card">
-                    <img src={airlineTailLogo}></img>
+                    <Col id="aircraft-img">
+                        <img src={airlineTailLogo}></img>
+                    </Col>
                     <ListGroup className="aircraft-list-group">
-                        <ListGroupItem className="aircraft-list-group-item">
+                        <ListGroupItem id="aircraft-status">
                             {data.STATUS === "Loading" &&
                             <FontAwesomeIcon icon={faTruckPlane}/>
                             }
@@ -35,40 +37,76 @@ const Grid = ( { aircraft, airlineTailLogo } ) =>
                             <Button>Cargo</Button>
                         </ListGroupItem>
                         <ListGroupItem className="aircraft-list-group-item">
-                            <label className="aircraft-info-label">Code:</label>
-                            <label className="aircraft-info-label">{data.CODE}</label>
+                            <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-info-col">
+                            <label className="aircraft-info-label">Code</label>
+                            </Col>
+                            <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-value-col">
+                            <label className="aircraft-value-label">{data.CODE}</label>
+                            </Col>
                         </ListGroupItem>
                         <ListGroupItem className="aircraft-list-group-item">
-                            <label className="aircraft-info-label">Manufacture:</label>
-                            <label className="aircraft-info-label">{data.MFR}</label>
+                        <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-info-col">
+                            <label className="aircraft-info-label">Manufacture</label>
+                            </Col>
+                            <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-value-col">
+                            <label className="aircraft-value-label">{data.MFR}</label>
+                            </Col>
                         </ListGroupItem>
                         <ListGroupItem className="aircraft-list-group-item">
-                            <label className="aircraft-info-label">Model:</label>
-                            <label className="aircraft-info-label">{data.MODEL}</label>
+                        <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-info-col">
+                            <label className="aircraft-info-label">Model</label>
+                            </Col>
+                            <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-value-col">
+                            <label className="aircraft-value-label">{data.MODEL}</label>
+                            </Col>
                         </ListGroupItem>
                         <ListGroupItem className="aircraft-list-group-item">
-                            <label className="aircraft-info-label">Aircraft Type:</label>
-                            <label className="aircraft-info-label">{data["TYPE-ACFT"]}</label>
+                        <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-info-col">
+                            <label className="aircraft-info-label">Aircraft Type</label>
+                            </Col>
+                            <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-value-col">
+                            <label className="aircraft-value-label">{data["TYPE-ACFT"]}</label>
+                            </Col>
                         </ListGroupItem>
                         <ListGroupItem className="aircraft-list-group-item">
-                            <label className="aircraft-info-label">Engine Type: </label>
-                            <label className="aircraft-info-label">{data["TYPE-ENG"]}</label>
+                        <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-info-col">
+                            <label className="aircraft-info-label">Engine Type</label>
+                            </Col>
+                            <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-value-col">
+                            <label className="aircraft-value-label">{data["TYPE-ENG"]}</label>
+                            </Col>
                         </ListGroupItem>
                         <ListGroupItem className="aircraft-list-group-item">
-                            <label className="aircraft-info-label">AC Cat:</label>
-                            <label className="aircraft-info-label">{data["AC-CAT"]}</label>
+                        <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-info-col">
+                            <label className="aircraft-info-label">AC Cat</label>
+                            </Col>
+                            <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-value-col">
+                            <label className="aircraft-value-label">{data["AC-CAT"]}</label>
+                            </Col>
                         </ListGroupItem>
                         <ListGroupItem className="aircraft-list-group-item">
+                        <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-info-col">
                             <label className="aircraft-info-label">Build Cert:</label>
-                            <label className="aircraft-info-label">{data["BUILD-CERT-IND"]}</label>
+                            </Col>
+                            <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-value-col">
+                            <label className="aircraft-value-label">{data["BUILD-CERT-IND"]}</label>
+                            </Col>
                         </ListGroupItem>
                         <ListGroupItem className="aircraft-list-group-item">
-                            <label className="aircraft-info-label">Number Engines:</label>
-                            <label className="aircraft-info-label">{data["NO-ENG"]}</label>
+                        <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-info-col">
+                            <label className="aircraft-info-label"># Engines</label>
+                            </Col>
+                            <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-value-col">
+                            <label className="aircraft-value-label">{data["NO-ENG"]}</label>
+                            </Col>
                         </ListGroupItem>
                         <ListGroupItem className="aircraft-list-group-item">
-                            <label className="aircraft-info-label">Number Seats</label>
-                            <label className="aircraft-info-label">{data["NO-SEATS"]}</label>
+                        <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-info-col">
+                            <label className="aircraft-info-label"># Seats</label>
+                            </Col>
+                            <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6" className="aircraft-value-col">
+                            <label className="aircraft-value-label">{data["NO-SEATS"]}</label>
+                            </Col>
                         </ListGroupItem>
                     </ListGroup>
                 </Card>

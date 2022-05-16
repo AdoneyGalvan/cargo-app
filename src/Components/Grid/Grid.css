@@ -3,30 +3,75 @@
 }
 
 .aircraft-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 25px;
     overflow: hidden;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+#aircraft-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .aircraft-card:hover {
     border-color: var(--airline-accent-color-1);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px var(--airline-accent-color-1);
 }
-
-.aircraft-list-group-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid var(--airline-accent-color-1);
-    border-bottom: 1px solid var(--airline-accent-color-1);
+.aircraft-list-group {
+  padding: 0px;
+  max-width: 100%;
 }
 
-.aircraft-list-group {
-  width: 100%;
+.aircraft-list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--airline-accent-color-1);
+  border-bottom: 1px solid var(--airline-accent-color-1);
+  border-right: 0px;
+  border-left: 0px;
+  padding: 0px;
+  background-color: var(--airline-accent-color-1);
+}
+
+#aircraft-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--airline-accent-color-1);
+  border-bottom: 1px solid var(--airline-accent-color-1);
+  border-right: 0px;
+  border-left: 0px;
+  padding: 0px;
+}
+
+.aircraft-info-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--airline-accent-color-1);
+}
+
+.aircraft-value-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--airline-accent-color-2);
+  height: 100%;
+}
+
+.aircraft-info-label {
+ color: var(--airline-accent-color-2);
+ font-weight: bold;
+ text-align: center;
+}
+
+.aircraft-value-label {
+  color: var(--airline-primary-color);
+  font-weight: bold;
+  text-align: center;
 }
 
   .aircraft-data-wrapper button {
@@ -63,20 +108,4 @@
     color: var(--airline-primary-color);
     height: 35px;
     margin-right: 10px;
-  }
-
-  .aircraft-list-group-item > .aircraft-value-label {
-    color: var(--airline-accent-color-2);
-    background-color: var(--airline-primary-color);
-    border-radius: 25px;
-    padding: 7px;
-    font-weight: bold;
-    margin-right: 10px;
-  }
-
-  .aircraft-list-group-item > .aircraft-info-label {
-    color: var(--airline-primary-color);
-    border-radius: 25px;
-    font-weight: bold;
-    margin-right: 5px;
   }
