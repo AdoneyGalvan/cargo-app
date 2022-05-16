@@ -1,5 +1,5 @@
 import React from "react";
-import "./Aircraft.css";
+import "./Table.css";
 import { Image, Form } from 'react-bootstrap';
 import { faPlaneDeparture} from "@fortawesome/free-solid-svg-icons";
 import { faPlaneArrival} from "@fortawesome/free-solid-svg-icons";
@@ -8,7 +8,7 @@ import { faTruckPlane} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Row, Col, Button} from 'react-bootstrap';
 
-const Aircraft = ( { aircraft, airlineTailLogo } ) =>
+const Table = ( { aircraft, airlineTailLogo } ) =>
 {
 
     return (
@@ -67,22 +67,22 @@ const Aircraft = ( { aircraft, airlineTailLogo } ) =>
                 <label>{data.MODEL}</label>
                 </Col>
                 <Col className="d-none d-md-block"  xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
-                <label>{data['NO-ENG']}</label>
+                <label>{data["TYPE-ACFT"]}</label>
                 </Col>
                 <Col className="d-none d-md-block"  xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
-                <label>{data.SPEED}</label>
+                <label>{data["TYPE-ENG"]}</label>
                 </Col>
                 <Col className="d-none d-md-block"  xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
-                <label>{data.SPEED}</label>
+                <label>{data["AC-CAT"]}</label>
                 </Col>
                 <Col className="d-none d-md-block" xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
-                <label>{data.SPEED}</label>
+                <label>{data["BUILD-CERT-IND"]}</label>
                 </Col>
                 <Col className="d-none d-md-block" xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
-                <label>{data.SPEED}</label>
+                <label>{data["NO-ENG"]}</label>
                 </Col>
                 <Col className="d-none d-md-block"  xxl="1" xl="1" lg="1" md="1" sm="0" xs="0">
-                <label>{data.SPEED}</label>
+                <label>{data["NO-SEATS"]}</label>
                 </Col>
                 <Col xxl="1" xl="1" lg="1" md="1" sm="3" xs="3">
                 {data.STATUS === "Loading" &&
@@ -107,4 +107,4 @@ const Aircraft = ( { aircraft, airlineTailLogo } ) =>
     );
 }
 
-export default Aircraft;
+export default Table;

@@ -1,0 +1,76 @@
+.aircraft-data-wrapper {
+    display: flex;
+}
+
+.aircraft-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aircraft-card:hover {
+    border-color: var(--airline-accent-color-1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px var(--airline-accent-color-1);
+}
+
+.aircraft-list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .aircraft-data-wrapper button {
+    border-radius: 25px;
+    border: 0.5rem solid var(--airline-primary-color);
+    background-color: var(--airline-primary-color);
+    font-weight: bold;
+    color: var(--airline-accent-color-2);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0.3rem;
+    margin-left: 10px;
+  }
+
+  .aircraft-data-wrapper button:hover {
+    border: 0.5rem solid var(--airline-accent-color-4);
+    background-color: var(--airline-accent-color-4);
+  }
+
+  .aircraft-data-wrapper button:focus {
+    background-color: var(--airline-accent-color-1);
+    border-color: var(--airline-accent-color-1) !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px var(--airline-accent-color-1) !important;
+  }
+
+
+  .aircraft-data-wrapper img{
+    color: var(--airline-primary-color);
+    max-height: 100px;
+    max-width: 100px;
+  }
+
+  .aircraft-data-wrapper svg {
+    color: var(--airline-primary-color);
+    height: 35px;
+    margin-right: 10px;
+  }
+
+  .aircraft-list-group-item > .aircraft-value-label {
+    color: var(--airline-accent-color-2);
+    background-color: var(--airline-primary-color);
+    border-radius: 25px;
+    padding: 7px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .aircraft-list-group-item > .aircraft-info-label {
+    color: var(--airline-primary-color);
+    border-radius: 25px;
+    font-weight: bold;
+    margin-right: 5px;
+  }

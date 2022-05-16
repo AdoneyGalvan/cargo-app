@@ -7,7 +7,8 @@ import SearchBar from './Components/SearchBar/SearchBar';
 import Filters from './Components/Filters/Filters';
 import Toggle from './Components/Toggle/Toggle';
 import aircraft from './aircraft-data.json';
-import Aircraft from './Components/Aircraft/Aircraft';
+import Table from './Components/Table/Table';
+import Grid from './Components/Grid/Grid';
 import virginTailLogo from './images/virgin-atlantic-logo-tail.png';
 import virginLogo from './images/virgin-atlantic-logo-alt.png';
 import alaskaTailLogo from './images/alaska-airlines-logo-tail.png';
@@ -100,7 +101,12 @@ function App() {
             <Toggle toggled={toggled} onClick={handleClick}></Toggle>
           </Row>
           <Row id='aircraft-section'>
-            <Aircraft aircraft={aircraft} airlineTailLogo={airlineTailLogo}></Aircraft>
+            { toggled == false &&
+              <Table aircraft={aircraft} airlineTailLogo={airlineTailLogo}></Table>
+            }
+            { toggled == true &&
+              <Grid aircraft={aircraft} airlineTailLogo={airlineTailLogo}></Grid>
+            }
           </Row>
         </Col>
       </Row>
