@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cargo-app/static/css/main.27226b5f.css",
-    "main.js": "/cargo-app/static/js/main.12679a5a.js",
+    "main.css": "/cargo-app/static/css/main.6a53965d.css",
+    "main.js": "/cargo-app/static/js/main.5def2727.js",
     "static/media/boeing-logo-tail.png": "/cargo-app/static/media/boeing-logo-tail.e244c6226ccff4dfc387.png",
     "static/media/boeing-logo.png": "/cargo-app/static/media/boeing-logo.7e940529fb28b81f3060.png",
     "static/media/alaska-airlines-logo-tail.png": "/cargo-app/static/media/alaska-airlines-logo-tail.62ffc7bda01cb9ea4a81.png",
@@ -11,11 +11,11 @@
     "static/media/virgin-atlantic-logo-alt.png": "/cargo-app/static/media/virgin-atlantic-logo-alt.0237eaa342b0580e07f4.png",
     "static/media/alaska-airlines-logo-alt.png": "/cargo-app/static/media/alaska-airlines-logo-alt.679c5213492757c9332e.png",
     "index.html": "/cargo-app/index.html",
-    "main.27226b5f.css.map": "/cargo-app/static/css/main.27226b5f.css.map",
-    "main.12679a5a.js.map": "/cargo-app/static/js/main.12679a5a.js.map"
+    "main.6a53965d.css.map": "/cargo-app/static/css/main.6a53965d.css.map",
+    "main.5def2727.js.map": "/cargo-app/static/js/main.5def2727.js.map"
   },
   "entrypoints": [
-    "static/css/main.27226b5f.css",
-    "static/js/main.12679a5a.js"
+    "static/css/main.6a53965d.css",
+    "static/js/main.5def2727.js"
   ]
 }
