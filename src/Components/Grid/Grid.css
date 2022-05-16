@@ -21,6 +21,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid var(--airline-accent-color-1);
+    border-bottom: 1px solid var(--airline-accent-color-1);
+}
+
+.aircraft-list-group {
+  width: 100%;
 }
 
   .aircraft-data-wrapper button {

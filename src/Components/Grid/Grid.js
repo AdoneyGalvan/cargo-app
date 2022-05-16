@@ -18,7 +18,7 @@ const Grid = ( { aircraft, airlineTailLogo } ) =>
             <Col xxl="2" xl="3" lg="4" md="6" sm="12" xs="12" key={data.id}>
                 <Card className="aircraft-card">
                     <img src={airlineTailLogo}></img>
-                    <ListGroup>
+                    <ListGroup className="aircraft-list-group">
                         <ListGroupItem className="aircraft-list-group-item">
                             {data.STATUS === "Loading" &&
                             <FontAwesomeIcon icon={faTruckPlane}/>
